@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <div>
+      <header class="header container">
+        <a href="#"><img class="logo" src="./images/logo-big.png" alt="" /></a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">HOME</a></li>
+          </ul>
+        </nav>
+      </header>
+      </div> -->
+    <main class="main">
+      <section
+        class="section-intro container blend-sections"
+        id="section-intro"
+      >
+        <div class="zoom">
+          <div class="intro">
+            <div section="hero">
+              <img
+                class="heading"
+                src="./images/coollogo_com-195571334.png"
+                alt=""
+              />
+            </div>
+            <div class="hero-btn">
+              <div class="hvr">
+                <a class="hero-link play-button" href="#section-play">PLAY</a>
+              </div>
+              <div class="hvr">
+                <a
+                  class="hero-link rules-button"
+                  id="rules-b-1"
+                  href="#section-rules"
+                  >RULES</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-rules container" id="section-rules">
+        <div class="backdrop">
+          <div class="rule-container-grid">
+            <div class="all-chars">
+              <div class="all-char">
+                <img
+                  src="./images/rock.png"
+                  class="all-chars-img"
+                  alt=""
+                  id="rock-img"
+                />
+                <p class="all-chars-text" id="rock-text">ROCK</p>
+              </div>
+
+              <div class="all-char">
+                <img
+                  src="./images/paper.png"
+                  class="all-chars-img"
+                  alt=""
+                  id="paper-img"
+                />
+                <p class="all-chars-text" id="paper-text">PAPER</p>
+              </div>
+
+              <div class="all-char">
+                <img
+                  src="./images/scissors.png"
+                  class="all-chars-img"
+                  alt=""
+                  id="scissors-img"
+                />
+                <p class="all-chars-text" id="scissors-text">SCISSORS</p>
+              </div>
+            </div>
+            <div class="full-rule-card">
+              <img class="rule-img" src="./images/three-rule.png" />
+              <p class="rule-heading">RULES!</p>
+              <div class="con">
+                <div class="card">
+                  <div class="front"></div>
+                  <div class="back">
+                    <ul class="rule-list">
+                      <li class="rule-li">
+                        <p class="rule-text">
+                          <span class="strong-char">ROCK </span> BEATS
+                          <span class="weak-char"> SCISSORS</span>
+                        </p>
+                      </li>
+                      <li class="rule-li">
+                        <p class="rule-text">
+                          <span class="strong-char">PAPER </span> BEATS
+                          <span class="weak-char"> ROCK</span>
+                        </p>
+                      </li>
+                      <li class="rule-li">
+                        <p class="rule-text">
+                          <span class="strong-char">SCISSORS </span> BEAT
+                          <span class="weak-char"> PAPER</span>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="hvr">
+                <a class="hero-link play-button" href="#section-play">PLAY</a>
+              </div>
+            </div>
+            <img src="./images/girl.png" alt="" class="girl" />
+          </div>
+          <a href="#section-intro" class="end-btn hvr right-corner home-btn"
+            >HOME</a
+          >
+        </div>
+      </section>
+
+      <section class="section-play container" id="section-play">
+        <div class="blur">
+          <div class="ends">
+            <a href="#section-play" class="end-btn hvr" id="reset-btn">
+              RESET
+            </a>
+            <a
+              href="#section-rules"
+              class="end-btn hvr rules-button"
+              id="rules-btn"
+              >RULES</a
+            >
+            <a href="#section-intro" class="end-btn hvr" id="exit-btn">EXIT</a>
+          </div>
+          <div class="play-game">
+            <div class="images">
+              <div class="computer images-game">
+                <img
+                  class="computer-img"
+                  src="./images/rockComputer.png"
+                  alt=""
+                />
+              </div>
+              <div class="player images-game">
+                <img class="player-img" src="./images/rockPlayer.png" alt="" />
+              </div>
+            </div>
+            <div class="points">
+              COMPUTER<span class="computerPoints">0</span
+              ><span class="colon">:</span
+              ><span class="playerPoints">0</span>PLAYER
+            </div>
+            <div class="last">
+              <div class="options">
+                <button type="button" class="option-btn hvr">ROCK</button>
+                <button type="button" class="option-btn hvr">PAPER</button>
+                <button type="button" class="option-btn hvr">SCISSORS</button>
+              </div>
+              <div class="message">Choose an option to play!</div>
+            </div>
+          </div>
+        </div>
+        <div class="popup container">
+          <div class="winPopup">
+            <img class="win-popup-img" src="./images/win_img_.png" alt="" />
+            <div class="col-2">
+              <h5 class="popup-heading" id="win-popup-heading">
+                Congradulations, You Win!
+              </h5>
+              <div class="popup-btns">
+                <a href="#section-play" class="hero-link hvr popup-play-btn"
+                  >Play Again</a
+                >
+                <a href="#section-intro" class="hero-link hvr popup-home-btn"
+                  >Home</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="losePopup">
+          <img class="lose-popup-img" src="./images/lose_img_.png" alt="" />
+          <div class="col-2">
+            <h5 class="popup-heading" id="lose-popup-heading">
+              Oh no, Tough Luck!
+            </h5>
+            <div class="popup-btns">
+              <a href="#section-play" class="hero-link hvr popup-lose-play-btn"
+                >Try Again</a
+              >
+              <a href="#section-intro" class="hero-link hvr popup-lose-home-btn"
+                >Home</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
